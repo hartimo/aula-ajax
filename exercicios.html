@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Exercicios</title>
+		
+		<meta>
+		<script type="text/javascript" src="exercicios.js"></script>
+		
+		<style>
+		   #display{
+		      border: 1px solid;
+		      width: 184px;
+		      padding: 6px;
+		      background-color: silver;
+		      margin: 10px 0;
+		      text-align: right;
+		      font-family: monospace;
+		      font-size: x-large;
+		      
+		   }   
+
+		</style>	
+		
+	</head>
+	
+	<body>
+   	   <h1>Exercicios</h1>
+
+   	   <h3>1 - calculadora</h3>
+   	   
+  	   <label>N1</label>
+  	   <input type="text" id="n1"/><br>
+
+  	   <label>N2</label>
+  	   <input type="text" id="n2"/><br><br>
+
+	   <button onClick="soma()">soma</button>
+	   <button onClick="sub()">sub</button>
+	   <button onClick="mult()">mult</button>	   	   
+	   <button onClick="div()">div</button><br><br>
+
+  	   <label>TOTAL</label>
+   	   <div id="display">0</div><br>
+   	   
+   	   
+   	   <h3>2 - Reverso</h3>
+   	   <label>Texto</label>
+   	   <input type="text" id="texto"/>
+   	   <button onClick="reverter()">VAI</button>
+   	   
+   	   <div id="resultado"></div><br><br>
+
+
+   	   <h3>3 - Contagem</h3>
+   	   <label>Texto</label><br>
+   	   <textarea id="valores"></textarea><br>
+   	   <button onCLick="contagem()">Contar</contar>
+
+
+	</body>
+</html>
