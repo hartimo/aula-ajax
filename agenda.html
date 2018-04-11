@@ -1,0 +1,72 @@
+<html>
+
+<head>
+	<title>Aula de JS</title>
+
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<script type="text/javascript" src="agenda.js"></script>
+    <style>
+        label {
+            width: 100px;
+            display: inline-block;
+        }
+
+        .form {
+            width: 500px;
+        }
+
+        table {
+            margin: 20px 0;
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: 1px solid;
+            padding: 4px;
+        }
+        
+        table th {
+            background-color: silver;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Agenda</h1>
+
+    <fieldset class="form">
+        <label>Nome:</label>
+        <input type="text" id="nome"/><br>
+
+        <label>Fone:</label>
+        <input type="text" id="fone"/><br>
+        
+        <label>E-mail:</label>
+        <input type="text" id="email"/><br>
+
+        <button onclick="gravar()">Gravar</button>
+    </fieldset>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome:</th>
+                <th>Fone:</th>
+                <th>E-mail:</th>
+            </tr>
+        </thead>
+        <tbody id="lista">
+            <tr>
+                <td>Hartimo</td>
+                <td>(11) 98804-9877</td>
+                <td>adriano@hartimo.com.br</td>
+            </tr>
+        </tbody>        
+    </table>
+
+
+
+
+</body>
+</html>
