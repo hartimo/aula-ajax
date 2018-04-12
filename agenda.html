@@ -4,7 +4,7 @@
 	<title>Aula de JS</title>
 
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	<script type="text/javascript" src="agenda.js"></script>
+
     <style>
         label {
             width: 100px;
@@ -29,6 +29,16 @@
         table th {
             background-color: silver;
         }
+        
+        #msg-erro{
+            color: red;
+            border: 1px solid;
+            padding: 4px;
+            margin: 4px;
+            background-color: yellow; 
+            display: none;       
+        }
+
     </style>
 </head>
 
@@ -36,6 +46,8 @@
     <h1>Agenda</h1>
 
     <fieldset class="form">
+        <div id="msg-erro">mensagem de erro</div>
+
         <label>Nome:</label>
         <input type="text" id="nome"/><br>
 
@@ -65,8 +77,7 @@
         </tbody>        
     </table>
 
-
-
+	<script type="text/javascript" src="agenda.js"></script>
 
 </body>
 </html>
