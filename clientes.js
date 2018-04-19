@@ -39,7 +39,16 @@ $(function(){
         var cep = $("input[name=cep]").val();
         var dataNasc = $("input[name=data-nasc]").val();
 
-        var tr = '<tr>'
+        var form = {
+            "nome": nome,
+            "email": email,
+            "cep": cep,
+            "dataNasc": dataNasc
+        };
+    /*    
+        $.post('/clientes.php',form);
+
+            var tr = '<tr>'
         +'<td>'+ nome +'</td>'
         +'<td>'+ email +'</td>'
         +'<td>'+ cep +'</td>'
@@ -48,6 +57,8 @@ $(function(){
 
     var tr2 = $(tr).hide().fadeIn();//Cria ao evento de aparecer, hide oculta e fadeInt Mostra.
         $("tbody").append(tr2);
+    */    
+
     });//Fim do click - Botão adicionar
 
     $("input[name=cep]").keydown(function(ev){
@@ -65,9 +76,9 @@ $(function(){
 
     $("input[name=email]").blur(function(){
         var valor = $(this).val();
-        var regex = /^[a-zA-Z0-9\.\-_]*@[a-z0-9]*\.[a-z\.]*$/gm;
+        var regex = /^[a-zA-Z0-9\.\-_]*@[a-z0-9]*\.[a-z\.]*$/gm;//Expressão Regular - Site: regex101.com - Estudar livro:
         
-        if(regex.text(valor) == false)
+        if(regex.test(valor) == false)
         {
             alert("email inválido");
         }
